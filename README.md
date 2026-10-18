@@ -10,3 +10,8 @@ Explorer: https://explorer.solana.com/address/86CHuwRate63ooTL7bdaRt9ZhpiygbPt7s
 - **Token Explorer:** [Посмотреть токен в Explorer](https://explorer.solana.com/address/H78rVj4iPpk7meP7T73yWL54YYP4cCpPYqgJmcqp2zYh?cluster=devnet)
 - **Transfer Transaction:** [Посмотреть перевод в Explorer](https://explorer.solana.com/tx/4fEgjjt5GSzVH8EN1jHVn2Ltf4dUtqmbJqjhXeRVd4i5FxBJUNJrXnvea1LCsqbgj6Rn7Wps5BxJJXCmZuVRtFTw?cluster=devnet)
 - **Client Script:** `scripts/transfer_token.ts`
+
+## Неделя 8: РК1; BUILD SPRINT: первый Web3 MVP
+- **Архитектура прототипа:** React 18 + TypeScript + Vite + Solana Wallet Adapter
+- **Интеграция:** Чтение балансов SOL и собственного SPL-токена `H78rVj4iPpk7meP7T73yWL54YYP4cCpPYqgJmcqp2zYh`, управление PDA-профилем
+- **Расположение:** каталог `/app`
