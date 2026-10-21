@@ -20,3 +20,8 @@ Explorer: https://explorer.solana.com/address/86CHuwRate63ooTL7bdaRt9ZhpiygbPt7s
 - **Интегрированный протокол:** Jupiter Swap API (DEX Aggregator)
 - **Функционал:** Автоматический расчет оптимального пула ликвидности и генерация сериализованных транзакций свопа между парами токенов (SOL/USDC)
 - **Скрипт проверки:** `scripts/defi_swap.ts`
+
+## Неделя 10: NFT & Metaplex
+- **Стандарт:** Metaplex MPL Token Metadata (Umi Framework)
+- **Функционал:** Программный минт невзаимозаменяемого токена (NFT) с ончейн-метаданными в сети Devnet
+- **Скрипт запуска:** `scripts/mint_nft.ts`
