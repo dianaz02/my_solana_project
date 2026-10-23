@@ -15,3 +15,8 @@ Explorer: https://explorer.solana.com/address/86CHuwRate63ooTL7bdaRt9ZhpiygbPt7s
 - **Архитектура прототипа:** React 18 + TypeScript + Vite + Solana Wallet Adapter
 - **Интеграция:** Чтение балансов SOL и собственного SPL-токена `H78rVj4iPpk7meP7T73yWL54YYP4cCpPYqgJmcqp2zYh`, управление PDA-профилем
 - **Расположение:** каталог `/app`
+
+## Неделя 9: DeFi на Solana
+- **Интегрированный протокол:** Jupiter Swap API (DEX Aggregator)
+- **Функционал:** Автоматический расчет оптимального пула ликвидности и генерация сериализованных транзакций свопа между парами токенов (SOL/USDC)
+- **Скрипт проверки:** `scripts/defi_swap.ts`
