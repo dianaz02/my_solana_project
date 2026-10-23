@@ -29,11 +29,13 @@ async function main() {
     microLamports: 25000,
   });
 
-  // 3. Полезная нагрузка транзакции
+  // 3. Получаем минимальный баланс для освобождения от аренды (Rent Exemption)
+  const rentExemptBalance = await connection.getMinimumBalanceForRentExemption(0);
+
   const transferTx = SystemProgram.transfer({
     fromPubkey: sender.publicKey,
     toPubkey: recipient.publicKey,
-    lamports: 10000,
+    lamports: rentExemptBalance,
   });
 
   const transaction = new Transaction()
