@@ -25,3 +25,13 @@ Explorer: https://explorer.solana.com/address/86CHuwRate63ooTL7bdaRt9ZhpiygbPt7s
 - **Стандарт:** Metaplex MPL Token Metadata (Umi Framework)
 - **Функционал:** Программный минт невзаимозаменяемого токена (NFT) с ончейн-метаданными в сети Devnet
 - **Скрипт запуска:** `scripts/mint_nft.ts`
+
+## Неделя 11: Безопасность смарт-контрактов & Compute Budget
+- **Аудит безопасности контракта:**
+  - Проверка Signer Authorization (контроль прав через `Signer<'info>`)
+  - Изоляция аккаунтов через Anchor PDA constraints (`seeds`, `bump`)
+  - Защита от переполнений и re-initialization атак через `init_if_needed` / `init`
+- **Оптимизация транзакций:**
+  - Использование `ComputeBudgetProgram.setComputeUnitLimit` для точного задания CU
+  - Внедрение динамических `microLamports` (Priority Fees) для гарантированного прохождения транзакций
+- **Скрипт оптимизации:** `scripts/compute_budget_tx.ts`
